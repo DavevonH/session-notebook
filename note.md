@@ -4,16 +4,16 @@ Once
 In the shell
 git init # create a repo (once per project)
 # don't forget to add a .gitignore file
-git remote add origin <ssh-path-to-github>
+git remote add origin ssh-path-to-github
 
 For each feature
 In the shell
-git switch -c <branchname> # create a new branch
-git switch <branchname> # switch branch
-git add <file> # add a file to the stage
+git switch -c branchname # create a new branch
+git switch branchname # switch branch
+git add file # add a file to the stage
 git status # check, if everything is ok
-git commit -m "<message>" # commit your changes
-git push -u origin <branchname> # push to GitHub
+git commit -m "message" # commit your changes
+git push -u origin branchname # push to GitHub
 # continue on GitHub
 
 On GitHub
@@ -27,4 +27,4 @@ On GitHub
 Again in the shell
 git switch main
 git pull # get the merged commits in your local main
-git branch -d <oldbranchname> # delete the merged branch
+git branch -d oldbranchname # delete the merged branch
